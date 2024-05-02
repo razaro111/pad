@@ -198,17 +198,10 @@ Una vez que complete los datos, le retiramos las fichas y lo enviamos al área d
 });
 
 retiroExitoso.addEventListener("click", () => {
-  const texto = `*Para retirar su dinero* complete los siguientes datos:
+  const texto = `*PREMIO EN FILA* 💸
+*Su premio ya se encuentra en el sector de pagos* 👏🏼 Le enviaremos el comprobante de pago cuando se haya efectuado! 
 
-➡️ Usuario del juego:
-➡️ CBU y ALIAS:
-➡️ A nombre de quién está su cuenta bancaria:
-➡️ Monto que desea retirar:
-
-🤑 *RETIROS A PARTIR DE $2.000*
-Una vez que complete los datos, le retiramos las fichas y lo enviamos al área de pagos para que le abonen su premio.
-
-🙏🏼 *POR FAVOR, SEA PACIENTE Y AGUARDE SU TURNO, EL PAGO PUEDE DEMORAR.*`;
+*POR FAVOR, NO RESPONDA NI REACCIONE ESTE MENSAJE HASTA QUE LE ENVIEMOS SU PREMIO, SINO PASARÁ A ESTAR ÚLTIMO EN LA FILA Y SE DEMORARÁ MÁS EL PAGO*. ⚠️`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -293,13 +286,7 @@ Cualquier consulta que tenga estamos a su disposición 📩`;
 });
 
 solicitarComprobante.addEventListener("click", () => {
-  const texto = `🎁 *Sistema de Referidos* 🎁
-¡Recibimos una recomendación tuya! 🤩🙌🏼 
-
-¿Cómo canjear tus fichas?
-
-Simplemente escríbenos apartir de las 10 am a 12 am  para solicitar tus fichas correspondientes.
-A continuación, envíanos los números de tus amigos a quienes invitaste para que podamos verificar que hayan jugado.`;
+  const texto = `Por favor te solicito que hagas clic donde dice "Compartir comprobante", ya que necesitamos tener los comprobantes con toda la información de transferencia, de esta manera agilizamos la búsqueda de tu deposito. Gracias!`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
