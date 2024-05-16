@@ -297,7 +297,7 @@ solicitarComprobante.addEventListener("click", () => {
 });
 
 solicitarUsuario.addEventListener("click", () => {
-  const texto = `Por favor envíeme su usuario asignado poder cargar las fichas. Recuerde *hacerlo siempre* 🙏🏼`;
+  const texto = `Por favor envíeme su usuario asignado debajo del comprobante para poder cargarle las fichas. Recuerde hacerlo siempre 🙏🏼`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
