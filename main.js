@@ -212,8 +212,7 @@ retiroExitoso.addEventListener("click", () => {
 });
 
 premioEnviado.addEventListener("click", () => {
-  const texto = `*TU PREMIO YA FUE ENVIADO* 👏🏼🥳🎉 
-Felicitaciones! 💘 Gracias por jugar con *Caba Prestige* 🥹🙏🏼 Disfrutalo mucho ✨ No te olvides de recomendarnos @caba.prestige.`;
+  const texto = `*TU PREMIO YA FUE ENVIADO* 👏🏼🥳🎉 Felicitaciones! 💘 Gracias por jugar con *Caba Prestige* 🥹🙏🏼 Disfrutalo mucho ✨ No te olvides de recomendarnos @caba.prestige`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
