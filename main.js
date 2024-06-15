@@ -212,7 +212,7 @@ Las fichas ya fueron retiradas de su cuenta! Cuando el pago esté listo le envia
 
 premioEnviado.addEventListener("click", () => {
   const texto = `*TU PREMIO YA FUE ENVIADO* 👏🏼🥳🎉 
-Felicitaciones! 💘 Gracias por jugar con *Caba Prestige* 🥹🙏🏼 Disfrutalo mucho ✨ No te olvides de recomendarnos @caba.prestige.`;
+Felicitaciones! 💘 Gracias por jugar con *Caba Prestige* 🙏🏼 Disfrutalo mucho ✨ No te olvides de recomendarnos @caba.prestige.`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -223,13 +223,15 @@ Felicitaciones! 💘 Gracias por jugar con *Caba Prestige* 🥹🙏🏼 Disfruta
 });
 
 sistemaDePagos.addEventListener("click", () => {
-  const texto = `💰 *RETIROS Y PAGOS TODOS LOS DÍAS DE 8 AM A 00 HS*
+  const texto = `✅ *RETIROS Y PAGOS DISPONIBLES TODOS LOS DÍAS DE 8 AM A 00 HS.* 
 
-Los retiros pueden ser *a partir de $2.000*, puede retirar varias veces al día, no hay máximo de retiros diarios (siempre y cuando no retire $2.000 cada 5 / 10 minutos).
-El máximo de demora del pago es dependiendo del monto de retiro, de la cantidad de premios en fila que tengamos y con cuanta banca contemos en ese momento. *SE ABONA POR ORDEN DE LLEGADA*
-*Si hay mucha demora se informa previamente*. 🔹
-
-*Los pagos pueden ser en su totalidad o en cuotas dependiendo del monto a retirar y la carga realizada anteriormente.*`;
+⬇️ *Importante:*
+*LOS PAGOS SE REALIZAN POR ORDEN DE LLEGADA.*
+🔹 *Retiros a partir de $2.000:* Se pueden realizar múltiples retiros al día sin un límite máximo. 
+🔹 *Tiempo de espera:* El proceso del pago puede demorar entre 1 a 3 hs a partir de que se le retiran las fichas del juego. 
+🔹 *Al momento de abonar se tiene en cuenta:* Cantidad de premios en fila y nuestra disponibilidad de fondos.
+🔹 *Pagos en cuotas:* Dependiendo del monto ganado y de tus transacciones previas, el pago puede realizarse en su totalidad, en cuotas o con un plan de pagos gestionado por nuestro equipo de pagos.
+🔹 *Fondos insuficientes:* Si nuestras cuentas bancarias no disponen de fondos suficientes, utilizaremos nuestra recaudadora externa, lo que implicará un porcentaje del premio como tarifa servicio.`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
