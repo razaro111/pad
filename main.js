@@ -242,10 +242,10 @@ sistemaDePagos.addEventListener("click", () => {
 });
 
 demorasPagos.addEventListener("click", () => {
-  const texto = `Estimado cliente, le informamos que *contamos con demoras en los pagos*⏳ 
-Se irán abonando de a tandas, por favor le solicitamos que aguarde y respete su lugar en la fila, ya que si envía varios mensajes, tardaremos más en enviar su premio 🙏🏼💸
+  const texto = `Estimado cliente, le informamos que *estamos experimentando demoras en los pagos*⏳ 
+Los mismos, los iremos abonando de a tandas, por lo que le pedimos paciencia, ya que si envía varios mensajes, tardaremos más en enviarle el suyo 🙏🏼💸
 
-*Si quiere continuar jugando, puede cargar fichas de su premio* 😁`;
+*Si quiere continuar jugando, puede cargar fichas de su premio* 😁 Agradecemos su comprensión!`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
