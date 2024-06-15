@@ -38,17 +38,17 @@ form.addEventListener("submit", function (e) {
 
   if (inputNombre.length != 0 && inputCBU != 0 && inputAlias.length != 0) {
     cbuxl.addEventListener("click", () => {
-      const texto = `Buenas! 👋🏼 *RECUERDE CONSULTAR SIEMPRE NUESTRO CBU SEGUNDOS ANTES DE TRANSFERIR* ⚠️ 
+      const texto = `✅ *DATOS DEL CBU VIGENTE* ✅
 
 *Cuenta a nombre de:* ${inputNombre}
-🔹*CBU:* ${inputCBU}
-🔹*ALIAS:* ${inputAlias}
+*CBU:* ${inputCBU}
+*ALIAS:* ${inputAlias}
 
-Envíe el comprobante de transferencia y su usuario de juego *para poder cargarle las fichas.* 💥 
+💸 *MÍNIMO DE CARGA $1.000* 💸
+Envíe el comprobante y debajo únicamente su usuario asignado.
+💻 https://universegame.best 
 
-*MÍNIMO DE CARGA: $1.000*
-
-📲 Para jugar ingrese aquí: https://universegame.best`;
+🚨 NO ENVÍE DINERO SIN CONSULTAR EL CBU PREVIAMENTE. Si no consulta y transfiere a una cuenta inactiva, la acreditación de sus fichas se demorará.`;
       const elementoTemporal = document.createElement("textarea");
       elementoTemporal.value = texto;
       document.body.appendChild(elementoTemporal);
@@ -78,7 +78,7 @@ Envíe el comprobante de transferencia y su usuario de juego *para poder cargarl
 });
 
 nombreApodo.addEventListener("click", () => {
-  const texto = `Para comenzar a jugar con nosotros te pido tu *nombre y apellido* así podemos generarte un usuario! ⬇️`;
+  const texto = `Hola! Para comenzar a jugar con nosotros *te pido tu nombre y apellido* así podemos generarte un usuario! 👨🏻‍💻`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -119,11 +119,10 @@ bienvenida.addEventListener("click", function (e) {
   console.log(user);
 
   const texto = `Hola! 👑 *Bienvenido/a Caba Prestige*  
-Su casino online de confianza 🤝
 
-📱 *PLATAFORMA:* https://universegame.best
 🧑🏻‍💻 *USUARIO*: ${user}
 🔐 *CONTRASEÑA*: abc123
+📱 *PLATAFORMA:* https://universegame.best
 
 🤑 *MÍNIMO DE CARGA*: $1.000
 🤑 *MINIMO DE RETIRO*: $2.000
@@ -131,11 +130,11 @@ Su casino online de confianza 🤝
 
 ⚠️ *RECUERDE CONSULTAR SIEMPRE NUESTRO CBU SEGUNDOS ANTES DE TRANSFERIR*
 
-*Cuenta a nombre de:* ${inputNombre}
-🔹*CBU:* ${inputCBU}
-🔹*ALIAS:* ${inputAlias}
+✅ *Cuenta a nombre de:* ${inputNombre} ✅
+*CBU:* ${inputCBU}
+*ALIAS:* ${inputAlias}
 
-Envíe el *COMPROBANTE DE TRANSFERENCIA* y debajo su *USUARIO ASIGNADO* *para poder cargarle las fichas.* 💥`;
+Envíe el *COMPROBANTE DE TRANSFERENCIA* y debajo del mismo escriba sólo su *USUARIO ASIGNADO* 📩`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -150,23 +149,23 @@ Envíe el *COMPROBANTE DE TRANSFERENCIA* y debajo su *USUARIO ASIGNADO* *para po
 });
 
 info.addEventListener("click", () => {
-  const texto = `Buenas! 👋🏼 *Somos Caba Prestige*, tu casino online de confianza 🎰
-En nuestra plataforma vas a encontrar:
-➡️ Slots (maquinitas) 
-➡️ Ruletas en vivo
-➡️ Apuestas Deportivas
-➡️ Blackjack
-➡️ Baccarat
-➡️ Bingo
+  const texto = `¡Hola! 😄 *Somos Caba Prestige, tu casino online de confianza.*
 
-🔻*Mínimo* de carga $1.000
-🔻*Mínimo* de retiro $2.000
-🔻*Máximo* de retiro NO TENEMOS 
-🔻Contamos con *sistema de pagos*
+📱En nuestra PLATAFORMA: https://universegame.best encontrarás: 
+. Slots (maquinitas)
+. Ruletas en vivo
+. Apuestas deportivas
+. Blackjack
+. Baccarat
+. Bingo
 
-💻 Nuestra plataforma es https://universegame.best
+*Detalles importantes:*
+💰 *Depósito mínimo:* $1.000
+💰 *Retiro mínimo:* $2.000
+💰 *Retiro máximo:* ¡No tenemos límite!
+💰 Contamos con un *sistema de pagos* (puede solicitar más info sobre el mismo)
 
-*Si queres que te generemos un usuario* para comenzar a jugar envianos tu nombre y apellido / apodo 📨`;
+Si te interesa y queres que te generemos un usuario responde este mensaje indicándonos tu nombre y apellido! 📥`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -177,17 +176,17 @@ En nuestra plataforma vas a encontrar:
 });
 
 retiro.addEventListener("click", () => {
-  const texto = `Hola! 👋🏼 *Para retirar su dinero* complete los siguientes datos:
+  const texto = `Hola! *Felicidades por tu premio* 🙌🏼 Para retirar el dinero de tu cuenta te solicito los siguientes datos *EN ORDEN*: 
 
-➡️ Usuario:
-➡️ Nombre que figura en su cuenta bancaria:
-➡️ CBU y ALIAS:
-➡️ Monto que desea retirar:
+➡️ *Usuario de juego:*
+➡️ *Nombre completo que figura en tu cuenta bancaria:*
+➡️ *CBU o ALIAS:*
+➡️ *Monto que desea desea retirar:*
 
-🤑 *RETIROS A PARTIR DE $2.000*
-Una vez que complete los datos, le retiramos las fichas y lo enviamos al área de pagos para que le abonen su premio.
+🔺Los retiros son a partir $2.000 *sin excepción*
+Una vez que completes los datos, te retiramos las fichas y tu premio será enviado al sector de pagos para que efectúen la transferencia. 
 
-🙏🏼 *POR FAVOR, SEA PACIENTE Y AGUARDE SU TURNO, EL PAGO PUEDE DEMORAR.*`;
+🙏🏼 Por favor, te pedimos paciencia mientras procesamos tu pago. El envío del mismo *puede demorar un rato*.`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
