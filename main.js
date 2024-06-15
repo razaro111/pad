@@ -149,23 +149,23 @@ Envíe el *COMPROBANTE DE TRANSFERENCIA* y debajo del mismo escriba sólo su *US
 });
 
 info.addEventListener("click", () => {
-  const texto = `Buenas! 👋🏼 *Somos Caba Prestige*, tu casino online de confianza 🎰
-En nuestra plataforma vas a encontrar:
-➡️ Slots (maquinitas) 
-➡️ Ruletas en vivo
-➡️ Apuestas Deportivas
-➡️ Blackjack
-➡️ Baccarat
-➡️ Bingo
+  const texto = `¡Hola! 😄 *Somos Caba Prestige, tu casino online de confianza.*
 
-🔻*Mínimo* de carga $1.000
-🔻*Mínimo* de retiro $2.000
-🔻*Máximo* de retiro NO TENEMOS 
-🔻Contamos con *sistema de pagos*
+📱En nuestra PLATAFORMA: https://universegame.best encontrarás: 
+. Slots (maquinitas)
+. Ruletas en vivo
+. Apuestas deportivas
+. Blackjack
+. Baccarat
+. Bingo
 
-💻 Nuestra plataforma es https://universegame.best
+*Detalles importantes:*
+💰 *Depósito mínimo:* $1.000
+💰 *Retiro mínimo:* $2.000
+💰 *Retiro máximo:* ¡No tenemos límite!
+💰 Contamos con un *sistema de pagos* (puede solicitar más info sobre el mismo)
 
-*Si queres que te generemos un usuario* para comenzar a jugar envianos tu nombre y apellido / apodo 📨`;
+Si te interesa y queres que te generemos un usuario responde este mensaje indicándonos tu nombre y apellido! 📥`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
