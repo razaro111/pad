@@ -9,11 +9,11 @@ let retiroExitoso = document.getElementById("retiroExitoso");
 let premioEnviado = document.getElementById("premioEnviado");
 let sistemaDePagos = document.getElementById("sistemaDePagos");
 let demorasPagos = document.getElementById("demorasPagos");
-let consultaPorPremio = document.getElementById("consultaPorPremio");
+let sistemaRecomendacion = document.getElementById("sistemaRecomendacion");
 let bonificacion = document.getElementById("bonificacion");
 let solicitarComprobante = document.getElementById("solicitarComprobante");
 let solicitarUsuario = document.getElementById("solicitarUsuario");
-let premioDemorado = document.getElementById("premioDemorado");
+let publicidad = document.getElementById("publicidad");
 let noIngreso = document.getElementById("noIngreso");
 let cbuEquivocado = document.getElementById("cbuEquivocado");
 let mantenimiento = document.getElementById("mantenimiento");
@@ -38,17 +38,17 @@ form.addEventListener("submit", function (e) {
 
   if (inputNombre.length != 0 && inputCBU != 0 && inputAlias.length != 0) {
     cbuxl.addEventListener("click", () => {
-      const texto = `✅ *DATOS DEL CBU VIGENTE* ✅
+      const texto = `Buenas! 👋🏼 *RECUERDE CONSULTAR SIEMPRE NUESTRO CBU SEGUNDOS ANTES DE TRANSFERIR* ⚠️ 
 
 *Cuenta a nombre de:* ${inputNombre}
-*CBU:* ${inputCBU}
-*ALIAS:* ${inputAlias}
+🔹*CBU:* ${inputCBU}
+🔹*ALIAS:* ${inputAlias}
 
-💸 *MÍNIMO DE CARGA $1.000* 💸
-Envíe el comprobante y debajo *únicamente su usuario asignado.*
-💻 https://universegame.best 
+Envíe el comprobante de transferencia y su usuario de juego *para poder cargarle las fichas.* 💥 
 
-🚨 *NO ENVÍE DINERO SIN CONSULTAR EL CBU PREVIAMENTE.* Si no consulta y transfiere a una cuenta inactiva, la acreditación de sus fichas se demorará.`;
+*MÍNIMO DE CARGA: $1.000*
+
+📲 Para jugar ingrese aquí: https://universegame.best`;
       const elementoTemporal = document.createElement("textarea");
       elementoTemporal.value = texto;
       document.body.appendChild(elementoTemporal);
@@ -78,7 +78,7 @@ Envíe el comprobante y debajo *únicamente su usuario asignado.*
 });
 
 nombreApodo.addEventListener("click", () => {
-  const texto = `Hola! Para comenzar a jugar con nosotros *te pido tu nombre y apellido* así podemos generarte un usuario! 👨🏻‍💻`;
+  const texto = `Para comenzar a jugar con nosotros te pido tu *nombre y apellido* así podemos generarte un usuario! ⬇️`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -212,7 +212,8 @@ retiroExitoso.addEventListener("click", () => {
 });
 
 premioEnviado.addEventListener("click", () => {
-  const texto = `*TU PREMIO YA FUE ENVIADO* 👏🏼🥳🎉 Felicitaciones! 💘 Gracias por jugar con *Caba Prestige* 🥹🙏🏼 Disfrutalo mucho ✨ No te olvides de recomendarnos @caba.prestige`;
+  const texto = `*TU PREMIO YA FUE ENVIADO* 👏🏼🥳🎉 
+Felicitaciones! 💘 Gracias por jugar con *Caba Prestige* 🥹🙏🏼 Disfrutalo mucho ✨ No te olvides de recomendarnos @caba.prestige.`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -306,7 +307,7 @@ solicitarUsuario.addEventListener("click", () => {
   document.body.removeChild(elementoTemporal);
 });
 
-premioDemorado.addEventListener("click", () => {
+publicidad.addEventListener("click", () => {
   const texto = `Le informo que estamos en publicidad y *podemos presentar demoras a la hora de responder*. 
 Le pedimos porfavor paciencia ya que contestamos *por orden de llegada* y si envia muchos mensajes, su chat se posiciona *en el último lugar de la fila* y demoramos más en responderle! 🙏🏻`;
   const elementoTemporal = document.createElement("textarea");
