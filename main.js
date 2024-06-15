@@ -9,11 +9,11 @@ let retiroExitoso = document.getElementById("retiroExitoso");
 let premioEnviado = document.getElementById("premioEnviado");
 let sistemaDePagos = document.getElementById("sistemaDePagos");
 let demorasPagos = document.getElementById("demorasPagos");
-let sistemaRecomendacion = document.getElementById("sistemaRecomendacion");
+let consultaPorPremio = document.getElementById("consultaPorPremio");
 let bonificacion = document.getElementById("bonificacion");
 let solicitarComprobante = document.getElementById("solicitarComprobante");
 let solicitarUsuario = document.getElementById("solicitarUsuario");
-let publicidad = document.getElementById("publicidad");
+let premioDemorado = document.getElementById("premioDemorado");
 let noIngreso = document.getElementById("noIngreso");
 let cbuEquivocado = document.getElementById("cbuEquivocado");
 let mantenimiento = document.getElementById("mantenimiento");
@@ -38,17 +38,17 @@ form.addEventListener("submit", function (e) {
 
   if (inputNombre.length != 0 && inputCBU != 0 && inputAlias.length != 0) {
     cbuxl.addEventListener("click", () => {
-      const texto = `Buenas! 👋🏼 *RECUERDE CONSULTAR SIEMPRE NUESTRO CBU SEGUNDOS ANTES DE TRANSFERIR* ⚠️ 
+      const texto = `✅ *DATOS DEL CBU VIGENTE* ✅
 
 *Cuenta a nombre de:* ${inputNombre}
-🔹*CBU:* ${inputCBU}
-🔹*ALIAS:* ${inputAlias}
+*CBU:* ${inputCBU}
+*ALIAS:* ${inputAlias}
 
-Envíe el comprobante de transferencia y su usuario de juego *para poder cargarle las fichas.* 💥 
+💸 *MÍNIMO DE CARGA $1.000* 💸
+Envíe el comprobante y debajo *únicamente su usuario asignado.*
+💻 https://universegame.best 
 
-*MÍNIMO DE CARGA: $1.000*
-
-📲 Para jugar ingrese aquí: https://universegame.best`;
+🚨 *NO ENVÍE DINERO SIN CONSULTAR EL CBU PREVIAMENTE.* Si no consulta y transfiere a una cuenta inactiva, la acreditación de sus fichas se demorará.`;
       const elementoTemporal = document.createElement("textarea");
       elementoTemporal.value = texto;
       document.body.appendChild(elementoTemporal);
