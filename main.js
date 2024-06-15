@@ -13,7 +13,7 @@ let sistemaRecomendacion = document.getElementById("sistemaRecomendacion");
 let bonificacion = document.getElementById("bonificacion");
 let solicitarComprobante = document.getElementById("solicitarComprobante");
 let solicitarUsuario = document.getElementById("solicitarUsuario");
-let publicidad = document.getElementById("premioDemorado");
+let publicidad = document.getElementById("publicidad");
 let noIngreso = document.getElementById("noIngreso");
 let cbuEquivocado = document.getElementById("cbuEquivocado");
 let mantenimiento = document.getElementById("mantenimiento");
@@ -38,17 +38,17 @@ form.addEventListener("submit", function (e) {
 
   if (inputNombre.length != 0 && inputCBU != 0 && inputAlias.length != 0) {
     cbuxl.addEventListener("click", () => {
-      const texto = `✅ *DATOS DEL CBU VIGENTE* ✅
+      const texto = `Buenas! 👋🏼 *RECUERDE CONSULTAR SIEMPRE NUESTRO CBU SEGUNDOS ANTES DE TRANSFERIR* ⚠️ 
 
 *Cuenta a nombre de:* ${inputNombre}
-*CBU:* ${inputCBU}
-*ALIAS:* ${inputAlias}
+🔹*CBU:* ${inputCBU}
+🔹*ALIAS:* ${inputAlias}
 
-💸 *MÍNIMO DE CARGA $1.000* 💸
-Envíe el comprobante y debajo *únicamente su usuario asignado.*
-💻 https://universegame.best 
+Envíe el comprobante de transferencia y su usuario de juego *para poder cargarle las fichas.* 💥 
 
-🚨 *NO ENVÍE DINERO SIN CONSULTAR EL CBU PREVIAMENTE.* Si no consulta y transfiere a una cuenta inactiva, la acreditación de sus fichas se demorará.`;
+*MÍNIMO DE CARGA: $1.000*
+
+📲 Para jugar ingrese aquí: https://universegame.best`;
       const elementoTemporal = document.createElement("textarea");
       elementoTemporal.value = texto;
       document.body.appendChild(elementoTemporal);
@@ -78,7 +78,7 @@ Envíe el comprobante y debajo *únicamente su usuario asignado.*
 });
 
 nombreApodo.addEventListener("click", () => {
-  const texto = `Hola! Para comenzar a jugar con nosotros *te pido tu nombre y apellido* así podemos generarte un usuario! 👨🏻‍💻`;
+  const texto = `Para comenzar a jugar con nosotros te pido tu *nombre y apellido* así podemos generarte un usuario! ⬇️`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -119,10 +119,11 @@ bienvenida.addEventListener("click", function (e) {
   console.log(user);
 
   const texto = `Hola! 👑 *Bienvenido/a Caba Prestige*  
+Su casino online de confianza 🤝
 
+📱 *PLATAFORMA:* https://universegame.best
 🧑🏻‍💻 *USUARIO*: ${user}
 🔐 *CONTRASEÑA*: abc123
-📱 *PLATAFORMA:* https://universegame.best
 
 🤑 *MÍNIMO DE CARGA*: $1.000
 🤑 *MINIMO DE RETIRO*: $2.000
@@ -134,7 +135,7 @@ bienvenida.addEventListener("click", function (e) {
 🔹*CBU:* ${inputCBU}
 🔹*ALIAS:* ${inputAlias}
 
-Envíe el *COMPROBANTE DE TRANSFERENCIA* y debajo del mismo escriba *sólo su USUARIO ASIGNADO* 📩`;
+Envíe el *COMPROBANTE DE TRANSFERENCIA* y debajo su *USUARIO ASIGNADO* *para poder cargarle las fichas.* 💥`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -149,23 +150,23 @@ Envíe el *COMPROBANTE DE TRANSFERENCIA* y debajo del mismo escriba *sólo su US
 });
 
 info.addEventListener("click", () => {
-  const texto = `¡Hola! 😄 *Somos Caba Prestige, tu casino online de confianza.*
+  const texto = `Buenas! 👋🏼 *Somos Caba Prestige*, tu casino online de confianza 🎰
+En nuestra plataforma vas a encontrar:
+➡️ Slots (maquinitas) 
+➡️ Ruletas en vivo
+➡️ Apuestas Deportivas
+➡️ Blackjack
+➡️ Baccarat
+➡️ Bingo
 
-📱En nuestra PLATAFORMA: https://universegame.best encontrarás: 
-. Slots (maquinitas)
-. Ruletas en vivo
-. Apuestas deportivas
-. Blackjack
-. Baccarat
-. Bingo
+🔻*Mínimo* de carga $1.000
+🔻*Mínimo* de retiro $2.000
+🔻*Máximo* de retiro NO TENEMOS 
+🔻Contamos con *sistema de pagos*
 
-*Detalles importantes:*
-💰 *Depósito mínimo:* $1.000
-💰 *Retiro mínimo:* $2.000
-💰 *Retiro máximo:* ¡No tenemos límite!
-💰 Contamos con un *sistema de pagos* (puede solicitar más info sobre el mismo)
+💻 Nuestra plataforma es https://universegame.best
 
-Si te interesa y queres que te generemos un usuario responde este mensaje indicándonos tu nombre y apellido! 📥`;
+*Si queres que te generemos un usuario* para comenzar a jugar envianos tu nombre y apellido / apodo 📨`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -176,17 +177,17 @@ Si te interesa y queres que te generemos un usuario responde este mensaje indic�
 });
 
 retiro.addEventListener("click", () => {
-  const texto = `Hola! *Felicidades por tu premio* 🙌🏼 Para retirar el dinero de tu cuenta te solicito los siguientes datos *EN ORDEN*: 
+  const texto = `Hola! 👋🏼 *Para retirar su dinero* complete los siguientes datos:
 
-➡️ *Usuario de juego:*
-➡️ *Nombre completo que figura en tu cuenta bancaria:*
-➡️ *CBU o ALIAS:*
-➡️ *Monto que desea desea retirar:*
+➡️ Usuario:
+➡️ Nombre que figura en su cuenta bancaria:
+➡️ CBU y ALIAS:
+➡️ Monto que desea retirar:
 
-🔺Los retiros son a partir $2.000 *sin excepción*
-Una vez que completes los datos, te retiramos las fichas y tu premio será enviado al sector de pagos para que efectúen la transferencia. 
+🤑 *RETIROS A PARTIR DE $2.000*
+Una vez que complete los datos, le retiramos las fichas y lo enviamos al área de pagos para que le abonen su premio.
 
-🙏🏼 Por favor, te pedimos paciencia mientras procesamos tu pago. El envío del mismo *puede demorar un rato*.`;
+🙏🏼 *POR FAVOR, SEA PACIENTE Y AGUARDE SU TURNO, EL PAGO PUEDE DEMORAR.*`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -197,10 +198,10 @@ Una vez que completes los datos, te retiramos las fichas y tu premio será envia
 });
 
 retiroExitoso.addEventListener("click", () => {
-  const texto = `*SU PREMIO ESTÁ EN FILA* 💸
-Las fichas ya fueron retiradas de su cuenta! Cuando el pago esté listo le enviaremos el comprobante del mismo. 
+  const texto = `*PREMIO EN FILA* 💸
+*Su premio ya se encuentra en el sector de pagos* 👏🏼 Le enviaremos el comprobante de pago cuando se haya efectuado! 
 
-🙏🏼 *POR FAVOR, ESPERE QUE SE EFECTÚE EL PAGO SIN RESPONDER ESTE MENSAJE, DE LO CONTRARIO, PERDERÁ EL LUGAR EN LA FILA Y LA TRANSFERENCIA SE DEMORARÁ* ⚠️`;
+*POR FAVOR, NO RESPONDA NI REACCIONE ESTE MENSAJE HASTA QUE LE ENVIEMOS SU PREMIO, SINO PASARÁ A ESTAR ÚLTIMO EN LA FILA Y SE DEMORARÁ MÁS EL PAGO*. ⚠️`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -211,7 +212,7 @@ Las fichas ya fueron retiradas de su cuenta! Cuando el pago esté listo le envia
 });
 
 premioEnviado.addEventListener("click", () => {
-  const texto = `*TU PREMIO YA FUE ENVIADO* 👏🏼🥳🎉 Felicitaciones! 💘 Gracias por jugar con *Caba Prestige* 🙏🏼 Disfrutalo mucho ✨ No te olvides de recomendarnos @caba.prestige`;
+  const texto = `*TU PREMIO YA FUE ENVIADO* 👏🏼🥳🎉 Felicitaciones! 💘 Gracias por jugar con *Caba Prestige* 🥹🙏🏼 Disfrutalo mucho ✨ No te olvides de recomendarnos @caba.prestige`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -222,14 +223,13 @@ premioEnviado.addEventListener("click", () => {
 });
 
 sistemaDePagos.addEventListener("click", () => {
-  const texto = `✅ *RETIROS Y PAGOS DISPONIBLES TODOS LOS DÍAS DE 8 AM A 00 HS.* 
-⬇️ *Importante:*
-*LOS PAGOS SE REALIZAN POR ORDEN DE LLEGADA.*
-🔹 *Retiros a partir de $2.000:* Se pueden realizar múltiples retiros al día sin un límite máximo. 
-🔹 *Tiempo de espera:* El proceso del pago puede demorar entre 1 a 3 hs a partir de que se le retiran las fichas del juego. 
-🔹 *Al momento de abonar se tiene en cuenta:* Cantidad de premios en fila y nuestra disponibilidad de fondos.
-🔹 *Pagos en cuotas:* Dependiendo del monto ganado y de tus transacciones previas, el pago puede realizarse en su totalidad, en cuotas o con un plan de pagos gestionado por nuestro equipo de pagos.
-🔹 *Fondos insuficientes:* Si nuestras cuentas bancarias no disponen de fondos suficientes, utilizaremos nuestra recaudadora externa, lo que implicará un porcentaje del premio como tarifa servicio.`;
+  const texto = `💰 *RETIROS Y PAGOS TODOS LOS DÍAS DE 8 AM A 00 HS*
+
+Los retiros pueden ser *a partir de $2.000*, puede retirar varias veces al día, no hay máximo de retiros diarios (siempre y cuando no retire $2.000 cada 5 / 10 minutos).
+El máximo de demora del pago es dependiendo del monto de retiro, de la cantidad de premios en fila que tengamos y con cuanta banca contemos en ese momento. *SE ABONA POR ORDEN DE LLEGADA*
+*Si hay mucha demora se informa previamente*. 🔹
+
+*Los pagos pueden ser en su totalidad o en cuotas dependiendo del monto a retirar y la carga realizada anteriormente.*`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -240,10 +240,10 @@ sistemaDePagos.addEventListener("click", () => {
 });
 
 demorasPagos.addEventListener("click", () => {
-  const texto = `Estimado cliente, le informamos que *estamos experimentando demoras en los pagos*⏳ 
-Los mismos, los iremos abonando de a tandas, por lo que le pedimos paciencia, ya que si envía varios mensajes, tardaremos más en enviarle el suyo 🙏🏼💸
+  const texto = `Estimado cliente, le informamos que *contamos con demoras en los pagos*⏳ 
+Se irán abonando de a tandas, por favor le solicitamos que aguarde y respete su lugar en la fila, ya que si envía varios mensajes, tardaremos más en enviar su premio 🙏🏼💸
 
-*Si quiere continuar jugando, puede cargar fichas de su premio* 😁 Agradecemos su comprensión!`;
+*Si quiere continuar jugando, puede cargar fichas de su premio* 😁`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -254,8 +254,14 @@ Los mismos, los iremos abonando de a tandas, por lo que le pedimos paciencia, ya
 });
 
 sistemaRecomendacion.addEventListener("click", () => {
-  const texto = `Hola! Te comento que una vez que retiramos las fichas de tu cuenta, el premio entra en un proceso de pago que puede demorar de 1 a 3 horas. Previo a esto, vas a ver que el cajero te envía un mensaje que indica que no respondas hasta que se te envíe el premio. Esto nos ayuda a agilizar el proceso de pago y evitar cualquier demora adicional. 
-Te pedimos amablemente que seas paciente que en breve te enviamos el pago!`;
+  const texto = `*¿QUERÉS OBTENER 1000 FICHAS GRATIS?* 🤑🎁
+
+➡️ Por cada conocido que venga de tu parte y comience a jugar con nosotros te *REGALAMOS 1000 FICHAS*.
+
+👇🏼 *¿Cómo debes hacer para recomendarnos?* 👇🏼
+A continuación te dejamos nuestro link de WhatsApp para que puedas compartirlo con tus amigos y familiares, *recorda aclararles que nos digan que vienen de tu parte (deben decirnos tu nombre de usuario)*.
+
+wa.link/cabaprestige`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -266,10 +272,9 @@ Te pedimos amablemente que seas paciente que en breve te enviamos el pago!`;
 });
 
 bonificacion.addEventListener("click", () => {
-  const texto = ‼️ *IMPORTANTE: INFO SOBRE LAS BONIFICACIONES* ‼️
-
-Las bonificaciones que se te asignen son para aumentar tus posibilidades de ganar! En el caso que ganes, *se efectúa el retiro de todo (incluyendo la bonificación)* pero esta misma, no se incluye en el pago del premio.💰 
-Cualquier consulta que tengas estoy a tu disposición 📩`;
+  const texto = `‼️ *INFO SOBRE LAS BONIFICACIONES* ‼️
+Toda bonificación que se le agregue al usuario debe ser usada como una ayuda para que el jugador pueda tener más chances de ganar. 🤑 En el caso que gane, se retira todo pero la bonificación agregada NO SE ABONA junto con el premio ☝🏼💰
+Cualquier consulta que tenga estamos a su disposición 📩`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -280,7 +285,7 @@ Cualquier consulta que tengas estoy a tu disposición 📩`;
 });
 
 solicitarComprobante.addEventListener("click", () => {
-  const texto = `Por favor te solicito que hagas clic donde dice *"Compartir comprobante"*, ya que necesitamos tener los comprobantes con toda la información de transferencia, de esta manera agilizamos la búsqueda de tu deposito. Gracias!`;
+  const texto = `Por favor te solicito que hagas clic donde dice "Compartir comprobante", ya que necesitamos tener los comprobantes con toda la información de transferencia, de esta manera agilizamos la búsqueda de tu deposito. Gracias!`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -291,7 +296,7 @@ solicitarComprobante.addEventListener("click", () => {
 });
 
 solicitarUsuario.addEventListener("click", () => {
-  const texto = `Envíeme *sólo su usuario asignado* debajo del comprobante para poder cargarle las fichas. Y por favor, *recuerde hacerlo siempre* 🙏🏼`;
+  const texto = `Por favor envíeme su usuario asignado debajo del comprobante para poder cargarle las fichas. Recuerde hacerlo siempre 🙏🏼`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -301,10 +306,9 @@ solicitarUsuario.addEventListener("click", () => {
   document.body.removeChild(elementoTemporal);
 });
 
-premiodemorado.addEventListener("click", () => {
-  const texto = `Hola! 🙌🏼 Gracias por informarnos que el dinero del premio aún no llegó a tu cuenta. Lamentamos mucho esto, pero a veces, las transferencias bancarias pueden experimentar demoras que no dependen de nosotros. De todas maneras, revisaremos internamente si hubo algún error con el pago.
-
-Es importante tener en cuenta que las transferencias pueden demorar hasta 72 horas hábiles, dependiendo del proceso de recepción de cada banco. Aguarda unos instantes a que un supervisor pueda ingresar en la cuenta a chequear el estado de la transferencia demorada! En breve te informamos.`;
+publicidad.addEventListener("click", () => {
+  const texto = `Le informo que estamos en publicidad y *podemos presentar demoras a la hora de responder*. 
+Le pedimos porfavor paciencia ya que contestamos *por orden de llegada* y si envia muchos mensajes, su chat se posiciona *en el último lugar de la fila* y demoramos más en responderle! 🙏🏻`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -328,9 +332,8 @@ noIngreso.addEventListener("click", () => {
 });
 
 cbuEquivocado.addEventListener("click", () => {
-  const texto = `¡Hola! 👋🏼 Lamentamos informarle que *envió dinero a un CBU con el cual no estamos trabajando en este momento.* 
-Es fundamental que *consulte el CBU justo antes de realizar una transferencia* para evitar este tipo de inconvenientes y posibles pérdidas de dinero. Esto lo dejamos aclarado previamente!
-Por favor, aguarde mientras un supervisor verifica si el dinero ha ingresado en la cuenta equivocada. *Puede demorar un rato.*`;
+  const texto = `Hola! Le informo que envió dinero a un cbu con el cual no estamos trabajando en este momento ❌ Dejamos especificado previamente que *POR FAVOR CONSULTE EL CBU SEGUNDOS ANTES DE TRANSFERIR*, de lo contrario puede perder su dinero.
+Aguarde a que un supervisor chequee si el dinero ingresó en la cuenta a la cual envió por error. Le advierto que si la cuenta está inactiva, su dinero no podrá ser cargado 😕`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -341,8 +344,11 @@ Por favor, aguarde mientras un supervisor verifica si el dinero ha ingresado en 
 });
 
 mantenimiento.addEventListener("click", () => {
-  const texto = `Hola! La plataforma de juegos está experimentando algunas dificultades. Esto es debido a un mantenimiento que están realizando en la misma. Por este motivo, es posible que experimente caídas en el servicio sin previo aviso o una demora notable para poder ingresar en la página o al cargar los juegos. 
-No te preocupes que estamos al tanto y ya lo reclamamos para que lo puedan solucionar cuanto antes!`;
+  const texto = `Buenas 👋🏼 Le informamos que la pagina está siendo interrumpida debido a un mantenimiento.🧑🏻‍🔧 Desde nuestro lado no podemos cargar ni descargar fichas.
+
+Les pedimos paciencia, en cuanto se solucione le avisamos! 
+
+Gracias y disculpen las molestias 🙏🏼`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
