@@ -197,10 +197,10 @@ Una vez que completes los datos, te retiramos las fichas y tu premio será envia
 });
 
 retiroExitoso.addEventListener("click", () => {
-  const texto = `*PREMIO EN FILA* 💸
-*Su premio ya se encuentra en el sector de pagos* 👏🏼 Le enviaremos el comprobante de pago cuando se haya efectuado! 
+  const texto = `*SU PREMIO ESTÁ EN FILA* 💸
+Las fichas ya fueron retiradas de su cuenta! Cuando el pago esté listo le enviaremos el comprobante del mismo. 
 
-*POR FAVOR, NO RESPONDA NI REACCIONE ESTE MENSAJE HASTA QUE LE ENVIEMOS SU PREMIO, SINO PASARÁ A ESTAR ÚLTIMO EN LA FILA Y SE DEMORARÁ MÁS EL PAGO*. ⚠️`;
+🙏🏼 *POR FAVOR, ESPERE QUE SE EFECTÚE EL PAGO SIN RESPONDER ESTE MENSAJE, DE LO CONTRARIO, PERDERÁ EL LUGAR EN LA FILA Y LA TRANSFERENCIA SE DEMORARÁ* ⚠️`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
