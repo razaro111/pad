@@ -78,7 +78,7 @@ Envíe el comprobante y debajo *únicamente su usuario asignado.*
 });
 
 nombreApodo.addEventListener("click", () => {
-  const texto = `Para comenzar a jugar con nosotros te pido tu *nombre y apellido* así podemos generarte un usuario! ⬇️`;
+  const texto = `Hola! Para comenzar a jugar con nosotros *te pido tu nombre y apellido* así podemos generarte un usuario! 👨🏻‍💻`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -306,7 +306,7 @@ solicitarUsuario.addEventListener("click", () => {
   document.body.removeChild(elementoTemporal);
 });
 
-publicidad.addEventListener("click", () => {
+premioDemorado.addEventListener("click", () => {
   const texto = `Le informo que estamos en publicidad y *podemos presentar demoras a la hora de responder*. 
 Le pedimos porfavor paciencia ya que contestamos *por orden de llegada* y si envia muchos mensajes, su chat se posiciona *en el último lugar de la fila* y demoramos más en responderle! 🙏🏻`;
   const elementoTemporal = document.createElement("textarea");
