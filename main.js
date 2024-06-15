@@ -48,7 +48,7 @@ form.addEventListener("submit", function (e) {
 Envíe el comprobante y debajo únicamente su usuario asignado.
 💻 https://universegame.best 
 
-🚨 NO ENVÍE DINERO SIN CONSULTAR EL CBU PREVIAMENTE. Si no consulta y transfiere a una cuenta inactiva, la acreditación de sus fichas se demorará.`;
+🚨 *NO ENVÍE DINERO SIN CONSULTAR EL CBU PREVIAMENTE.* Si no consulta y transfiere a una cuenta inactiva, la acreditación de sus fichas se demorará.`;
       const elementoTemporal = document.createElement("textarea");
       elementoTemporal.value = texto;
       document.body.appendChild(elementoTemporal);
@@ -274,9 +274,10 @@ wa.link/cabaprestige`;
 });
 
 bonificacion.addEventListener("click", () => {
-  const texto = `‼️ *INFO SOBRE LAS BONIFICACIONES* ‼️
-Toda bonificación que se le agregue al usuario debe ser usada como una ayuda para que el jugador pueda tener más chances de ganar. 🤑 En el caso que gane, se retira todo pero la bonificación agregada NO SE ABONA junto con el premio ☝🏼💰
-Cualquier consulta que tenga estamos a su disposición 📩`;
+  const texto = `‼️ *IMPORTANTE: INFO SOBRE LAS BONIFICACIONES* ‼️
+
+Las bonificaciones que se te asignen son para aumentar tus posibilidades de ganar! En el caso que ganes, *se efectúa el retiro de todo (incluyendo la bonificación)* pero esta misma, no se incluye en el pago del premio.💰 
+Cualquier consulta que tengas estoy a tu disposición 📩`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
