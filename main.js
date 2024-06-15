@@ -176,17 +176,17 @@ Si te interesa y queres que te generemos un usuario responde este mensaje indic�
 });
 
 retiro.addEventListener("click", () => {
-  const texto = `Hola! 👋🏼 *Para retirar su dinero* complete los siguientes datos:
+  const texto = `Hola! *Felicidades por tu premio* 🙌🏼 Para retirar el dinero de tu cuenta te solicito los siguientes datos *EN ORDEN*: 
 
-➡️ Usuario:
-➡️ Nombre que figura en su cuenta bancaria:
-➡️ CBU y ALIAS:
-➡️ Monto que desea retirar:
+➡️ *Usuario de juego:*
+➡️ *Nombre completo que figura en tu cuenta bancaria:*
+➡️ *CBU o ALIAS:*
+➡️ *Monto que desea desea retirar:*
 
-🤑 *RETIROS A PARTIR DE $2.000*
-Una vez que complete los datos, le retiramos las fichas y lo enviamos al área de pagos para que le abonen su premio.
+🔺Los retiros son a partir $2.000 *sin excepción*
+Una vez que completes los datos, te retiramos las fichas y tu premio será enviado al sector de pagos para que efectúen la transferencia. 
 
-🙏🏼 *POR FAVOR, SEA PACIENTE Y AGUARDE SU TURNO, EL PAGO PUEDE DEMORAR.*`;
+🙏🏼 Por favor, te pedimos paciencia mientras procesamos tu pago. El envío del mismo *puede demorar un rato*.`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
