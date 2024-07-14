@@ -6,7 +6,7 @@ let registrar = document.getElementById("modal-button");
 let info = document.getElementById("info");
 let retiro = document.getElementById("retiro");
 let retiroExitoso = document.getElementById("retiroExitoso");
-let premioEnviado = document.getElementById("premioEnviado");
+let prueba = document.getElementById("prueba");
 let sistemaDePagos = document.getElementById("sistemaDePagos");
 let demorasPagos = document.getElementById("demorasPagos");
 let sistemaRecomendacion = document.getElementById("sistemaRecomendacion");
@@ -210,8 +210,8 @@ Las fichas ya fueron retiradas de su cuenta! Cuando el pago esté listo le envia
   document.body.removeChild(elementoTemporal);
 });
 
-premioEnviado.addEventListener("click", () => {
-  const texto = `*TU PREMIO YA FUE ENVIADO* 👏🏼🥳🎉 
+prueba.addEventListener("click", () => {
+  const texto = `*PRUEBA COMPLETADA* 👏🏼🥳🎉 
 Felicitaciones! 💘 Gracias por jugar con *Caba Prestige* 🙏🏼 Disfrutalo mucho ✨ No te olvides de recomendarnos @caba.prestige.`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
